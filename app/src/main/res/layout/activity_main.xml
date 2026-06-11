@@ -199,14 +199,13 @@
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="120dp"
             android:padding="16dp"
             android:textSize="18sp"
             android:layout_marginBottom="36dp"
             android:backgroundTint="#00B956"
             android:text="Войти"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cards"/>
 
