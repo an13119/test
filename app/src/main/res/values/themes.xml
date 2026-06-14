@@ -11,5 +11,12 @@
         <item name="android:layout_gravity">center</item>
     </style>
 
+    <style name="Tab.Text.Style" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Tab.Text.Selected.Style" parent="Tab.Text.Style">
+        <item name="android:textStyle">bold</item>
+    </style>
     <style name="Theme.TestApplication" parent="Base.Theme.TestApplication" />
 </resources>
