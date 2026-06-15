@@ -10,9 +10,9 @@
     <TextView
         android:layout_width="match_parent"
         android:id="@+id/textPhone"
-        android:layout_height="117dp"
+        android:layout_height="90dp"
         android:text="Введите номер телефона"
-        android:textSize="35sp"
+        android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
