@@ -103,14 +103,14 @@
             android:layout_marginStart="4dp"
             android:text="Нет SIM-карты?"
             android:textColor="#333333"
-            android:textSize="12sp"/>
+            android:textSize="14sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:text="Заказать"
             android:textColor="#00B956"
-            android:textSize="12sp" />
+            android:textSize="14sp" />
     </LinearLayout>
 
     <Button
@@ -140,14 +140,14 @@
             android:layout_marginStart="4dp"
             android:text="Нажимая кнопку «Продолжить», высоглашаетесь с"
             android:textColor="#3C3C4399"
-            android:textSize="10sp"/>
+            android:textSize="12sp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:text="«Условиями пользовательского соглашения»"
             android:textColor="#34AAF2"
-            android:textSize="10sp"/>
+            android:textSize="12sp"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
