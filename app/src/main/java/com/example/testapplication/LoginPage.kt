@@ -8,10 +8,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.viewpager2.widget.ViewPager2
+import com.example.testapplication.databinding.ActivityLoginPageBinding
+import com.example.testapplication.databinding.ActivityMainBinding
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
+// read about lifecycle of fragment/activity
+// read about binding
+
 class LoginPage : AppCompatActivity() {
+    private lateinit var binding: ActivityLoginPageBinding
     private lateinit var viewPagerAdapter: ViewPagerAdapter
     private lateinit var viewPager: ViewPager2
     private lateinit var tabLayout: TabLayout
@@ -25,8 +31,12 @@ class LoginPage : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        viewPager = findViewById(R.id.pager)
-        tabLayout = findViewById(R.id.tabLayout)
+
+        binding = ActivityLoginPageBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        viewPager = binding.pager
+        tabLayout = binding.tabLayout
+
         viewPagerAdapter = ViewPagerAdapter(this)
         viewPagerAdapter.addFragment(CellService(), "Мобильная связь")
         viewPagerAdapter.addFragment(HomeInternet(), "Домашний интернет")
@@ -37,8 +47,7 @@ class LoginPage : AppCompatActivity() {
             tab.text = viewPagerAdapter.getPageTitle(position)
         }.attach()
 
-
-        val backIcon = findViewById<com.google.android.material.appbar.MaterialToolbar>(R.id.back)
+        val backIcon = binding.back
         backIcon.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
